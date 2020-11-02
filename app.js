@@ -88,4 +88,21 @@ dropdownConquistasItens.forEach(item => {
     })
 })
     
-   
+// modal controls
+const localizacaoBtns = document.querySelectorAll(".id-modal");
+const modal = document.querySelector(".modal");
+const modalBG = document.querySelector(".modal-background")
+
+localizacaoBtns.forEach(button => {
+    button.addEventListener("click", (e) => {
+        e.preventDefault();
+        modal.classList.add("is-active")
+    })
+})
+
+
+
+
+modalBG.addEventListener("click", () => {
+    modal.classList.remove("is-active")
+})

@@ -42,8 +42,8 @@
                         <a class="navbar-item is-size-4 has-text-weight-semibold has-text-white outline" href="#sparing">
                             Sparing Nota 10
                         </a>
-                        <span class="navbar-item is-hidden-desktop has-text-white">
-                            <a class="button is-success is-inverted" href="">
+                        <span class="navbar-item is-hidden-desktop has-text-white " >
+                            <a class="button is-success is-inverted id-modal" href="">
                             <span class="icon">
                                 <i class="fas fa-map-marked-alt"></i>
                             </span>
@@ -55,7 +55,7 @@
                 <div id="navbarMenuHeroC" class="navbar-menu">
                     <div class="navbar-end">
                       <span class="navbar-item">
-                        <a class="button is-success" href="">
+                        <a class="button is-success id-modal" href="" id="local">
                         <span class="icon">
                             <i class="fas fa-map-marked-alt"></i>
                         </span>
@@ -522,24 +522,28 @@
                       <p class="is-size-6 has-text-justified">Contamos com vocês! Maiores dúvidas entre em contato.</p>
                       <!-- form -->
                       <div class="field">
-                        <label class="label">Entre em contato</label>
+                        <label class="label">Entre em contato:</label>
                         <div class="control">
-                          <input class="input" type="text" placeholder="nome">
+                          <label for="nome">Nome</label>
+                          <input class="input" type="text" placeholder="nome" id="nome">
                         </div>
                       </div>
                       <div class="field">
                         <div class="control">
-                          <input class="input" type="email" placeholder="email">
+                          <label for="email">Email</label>
+                          <input class="input" type="email" placeholder="email" id="email">
                         </div>
                       </div>
                       <div class="field">
                         <div class="control">
-                          <input class="input" type="tel" placeholder="telefone">
+                          <label for="telefone">Telefone</label>
+                          <input class="input" type="tel" placeholder="telefone" id="telefone">
                         </div>
                       </div>
                       <div class="field">
                         <div class="control">
-                          <input class="input" type="text" placeholder="mensagem">
+                          <label for="mensagem">Mensagem</label>
+                          <input class="input" type="text" placeholder="mensagem" id="mensagem">
                         </div>
                       </div>
                       <!-- end of form -->
@@ -557,168 +561,62 @@
               </article>
             </div>
           </div>
-          <!-- end tile FILOSOFIA-->
+          <!-- end tile INSCREVA-->
         </div>
         <div id="videos" class="is-hidden content2">
-          <!-- start tile CONQUISTAS-->
-          <div class="tile is-ancestor">
-            <div class="tile is-vertical is-4">
-              <div class="tile">
-                <div class="tile is-parent is-vertical">
-                  <article class="tile is-child notification is-info" style="min-height: 350px;" id="dropdown-tile">
-                    <p class="title">Nossas Conquistas</p>
-                    <!-- DROPDOWN -->
-                    <div class="dropdown" id="dropdown-conquistas"> 
-                      <div class="dropdown-trigger">
-                        <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
-                          <span>Escolha o ano</span>
-                          <span class="icon is-small">
-                            <i class="fas fa-angle-down" aria-hidden="true"></i>
-                          </span>
-                        </button>
-                      </div>
-                      <div class="dropdown-menu" id="dropdown-menu" role="menu">
-                        <div class="dropdown-content">
-                          <a class="dropdown-item" data-year="2020">2020</a>
-                          <a class="dropdown-item" data-year="2019">2019</a> 
-                          <a class="dropdown-item" data-year="2018">2018</a>
-                          <a class="dropdown-item" data-year="anteriores">
-                            Anos anteriores
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- END OF DROPDOWN -->
-                  </article>
-                </div>
-              </div>
+          <!-- start tile VIDEOS-->
+          <div class="columns is-multiline is-vcentered">
+            <div class="column is-4">
+              <figure class="image is-16by9">
+                <a href="https://www.youtube.com/embed/2QrmnqxMZ40" target="blank"><img src="./assets/videos/video1.png" alt=""></a>
+              </figure>
+              <span class="subtitle">CMTC Brasil x Argentina</span>
             </div>
-            <div class="tile is-parent">
-              <article class="tile is-child notification is-info">
-                <div class="content">
-                  <div class="content">
-                    <div class="tall is-hidden" id="2020">
-                      <div class="columns is-multiline">
-                        <!-- start horizontal card -->
-                        <div class="column is-12-desktop has-background-white has-text-black round-border my-4">
-                          <div class="columns">
-                            <div class="column is-6-desktop">
-                              <figure class="image is-128by128">
-                                <img src="./assets/conquistas/2020/2020-2.png" alt="Placeholder image" class="round-border">
-                              </figure>
-                            </div>
-                            <div class="column is-6-desktop">
-                              <p class="subtitle"> Campeão Latino Americano - 2020</p>
-                              <p class="is-size-6"> Douglas Ataíde ("The Good Boy")</p>
-                              <p class="is-size-6"> Categoria Médio Profissional</p>
-                              <p class="is-size-7"> Técnico: Aparecido Silva(Cido)</p>
-                            </div>
-                          </div>
-                        </div> 
-                        <!-- end horizontal card -->
-                        <!-- start horizontal card -->
-                        <div class="column is-12-desktop has-background-white has-text-black round-border">
-                          <div class="columns">
-                            <div class="column is-6-desktop">
-                              <figure class="image is-128by128">
-                                <img src="./assets/conquistas/2020/2020-1.png" alt="Placeholder image" class="round-border">
-                              </figure>
-                            </div>
-                            <div class="column is-6-desktop">
-                              <p class="subtitle"> Campeão Brasileiro - 2020</p>
-                              <p class="is-size-6"> Douglas Ataíde ("The Good Boy")</p>
-                              <p class="is-size-6"> Categoria Médio Profissional</p>
-                              <p class="is-size-7"> Técnico: Aparecido Silva(Cido)</p>
-                            </div>
-                          </div>
-                        </div>
-                        <!-- end horizontal card -->
-                      </div>
-                    </div>
-                    <div class="tall is-hidden" id="2019">
-                      <div class="columns is-multiline">
-                        <!-- start horizontal card -->
-                        <div class="column is-12-desktop has-background-white has-text-black round-border my-4">
-                          <div class="columns">
-                            <div class="column is-6-desktop">
-                              <figure class="image is-128by128">
-                                <img src="./assets/conquistas/2019/2019-1.png" alt="Placeholder image" class="round-border">
-                              </figure>
-                            </div>
-                            <div class="column is-6-desktop">
-                              <p class="subtitle"> Campeão Brasileiro - 2019</p>
-                              <p class="is-size-6"> Daniel Saboya</p>
-                              <p class="is-size-6"> Categoria Meio-médio Profissional</p>
-                              <p class="is-size-7"> Técnico: Aparecido Silva(Cido)</p>
-                            </div>
-                          </div>
-                        </div> 
-                        <!-- end horizontal card -->
-                        <!-- start horizontal card -->
-                        <div class="column is-12-desktop has-background-white has-text-black round-border">
-                          <div class="columns">
-                            <div class="column is-6-desktop">
-                              <figure class="image is-128by128">
-                                <img src="./assets/conquistas/2019/2019-2.png" alt="Placeholder image" class="round-border">
-                              </figure>
-                            </div>
-                            <div class="column is-6-desktop">
-                              <p class="subtitle"> Campeão ìbero Americano - 2019</p>
-                              <p class="is-size-6"> Mohamad Said</p>
-                              <p class="is-size-6"> Categoria Médio Profissional</p>
-                              <p class="is-size-7"> Técnico: Aparecido Silva(Cido)</p>
-                            </div>
-                          </div>
-                        </div>
-                        <!-- end horizontal card -->
-                      </div>
-                    </div>
-                    <div class="tall is-hidden" id="2018">
-                      <div class="columns is-multiline">
-                        <!-- start horizontal card -->
-                        <div class="column is-12-desktop has-background-white has-text-black round-border">
-                          <div class="columns">
-                            <div class="column is-6-desktop">
-                              <figure class="image is-128by128">
-                                <img src="./assets/conquistas/2018/2018.png" alt="Placeholder image" class="round-border">
-                              </figure>
-                            </div>
-                            <div class="column is-6-desktop">
-                              <p class="subtitle"> Campeão Brasileiro - 2018</p>
-                              <p class="is-size-6"> Edson F. Guedes ("Rapadura")</p>
-                              <p class="is-size-6"> Categoria Super Médio Profissional (CBBP)</p>
-                              <p class="is-size-7"> Técnico: Aparecido Silva(Cido)</p>
-                            </div>
-                          </div>
-                        </div>
-                        <!-- end horizontal card -->
-                      </div>
-                    </div>
-                    <div class="tall is-hidden" id="anteriores">
-                      <div class="columns is-multiline">
-                        <!-- start horizontal card -->
-                        <div class="column is-12-desktop has-background-white has-text-black round-border">
-                          <div class="content">
-                            <ol type="I">
-                              <li>Torneiro dos campeões - 2017 - 3o colocado</li>
-                              <li>Troféu Campeonato Paulista - 2017 - 3o colocado coletivo por equipe</li>
-                              <li>Kid Jofre - 2017 - Campeão</li>
-                              <li>Campeonato Paulista de Boxe - 2016 - 3o colocado</li>
-                              <li>Kid Jofre - 2016 - Campeão</li>
-                              <li>Luvas de Ouro - 2016 - Campeão</li>
-                              <li>Luvas de Ouro - 2015 - Campeão</li>
-                            </ol>
-                          </div>
-                        </div>
-                        <!-- end horizontal card -->
-                    </div>
-                    <!-- Content -->
-                  </div>
-                </div>
-              </article>
+            <div class="column is-4">
+              <figure class="image is-16by9">
+                <a href="https://www.youtube.com/embed/78fJcw7bgUs" target="blank"><img src="./assets/videos/video2.png" alt=""></a>
+              </figure>
+              <span class="subtitle">Sparing Nota 10 - Leo Souza x Gabriel Pretti</span>
+            </div>
+            <div class="column is-4">
+              <figure class="image is-16by9">
+                <a href="https://www.youtube.com/embed/7Nmetxzmd6s" target="blank"><img src="./assets/videos/video1.png" alt=""></a>
+              </figure>
+              <span class="subtitle">Participe! Sparring Nota 10</span>
+            </div>
+            <div class="column is-4">
+              <figure class="image is-16by9">
+                <a href="https://www.youtube.com/embed/SXMU3wHjXZQ" target="blank"><img src="./assets/videos/video1.png" alt=""></a>
+              </figure>
+              <span class="subtitle">CMTC Brasil x Argentina</span>
+            </div>
+            <div class="column is-4">
+              <figure class="image is-16by9">
+                <a href="https://www.youtube.com/embed/65__IEAcB5U" target="blank"><img src="./assets/videos/video1.png" alt=""></a>
+              </figure>
+              <span class="subtitle">CMTC Brasil x Argentina</span>
+            </div>
+            <div class="column is-4">
+              <figure class="image is-16by9">
+                <a href="https://www.youtube.com/embed/HeTOGfgtHTA" target="blank"><img src="./assets/videos/video1.png" alt=""></a>
+              </figure>
+              <span class="subtitle">CMTC Brasil x Argentina</span>
+            </div>
+            <div class="column is-4">
+              <figure class="image is-16by9">
+                <a href="https://www.youtube.com/embed/ZVuZBrLxRcg" target="blank"><img src="./assets/videos/video1.png" alt=""></a>
+              </figure>
+              <span class="subtitle">CMTC Brasil x Argentina</span>
+            </div>
+            <div class="column is-4">
+              <figure class="image is-16by9">
+                <a href="https://www.youtube.com/embed/36Yk31rQ7rcg" target="blank"><img src="./assets/videos/video1.png" alt=""></a>
+              </figure>
+              <span class="subtitle">CMTC Brasil x Argentina</span>
             </div>
           </div>
-          <!-- end tile CONQUISTAS-->
+            
+          <!-- end tile VIDEOS-->
         </div>
       <!-- End of Tabs -->
     </div>
@@ -727,9 +625,39 @@
     </div>
   </section>
   <!-- end of sparring -->
+
+  <!-- modal ENDERECO -->
+  <div class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-content has-background-white py-5 px-5">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-4by3">
+            <img src="./assets/mapa.png" alt="Placeholder image">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="content">
+            <p>Rua Otilia, 835 - Vila Esperança (215.82 mi)</p>
+            <p>São Paulo, SP, Brazil 03649000</p>
+            <a href="https://www.google.com/maps/place/R.+Ot%C3%ADlia,+835+-+Penha+de+Fran%C3%A7a,+S%C3%A3o+Paulo+-+SP,+03649-000/@-23.5313178,-46.5225369,16z/data=!4m5!3m4!1s0x94ce5e1813772067:0x76bc8591f2f59baa!8m2!3d-23.5301003!4d-46.5248214" target="blank">Veja no seu mapa</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end of ENDERECO -->
 </main>
 
-<footer></footer>
+
+<footer class="footer">
+  <div class="content has-text-centered">
+    <p>
+      <strong>Clube de Boxe Guarany</strong> por <a href="http://www.agmarketingdigital.com.br/" class="has-text-bold">A - Agencia Digital</a>. 
+      <p>Copyright das imagens do Hero e sections por <a href="https://www.freepik.com/"> www.freepik.com</a></p>
+    </p>
+  </div>
+</footer>
 
 </body>
 </html>
