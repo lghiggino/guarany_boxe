@@ -25,16 +25,16 @@ navbarBurger.addEventListener("click", () => {
 })
 
 //Tabs navigation
-const tabs = document.querySelectorAll(".tabs li")
-const tabContentBoxes = document.querySelectorAll("#tab-content > div")
+const tabs1 = document.querySelectorAll(".tabs1")
+const tabContentBoxes1 = document.querySelectorAll(".content1")
 
-tabs.forEach(tab => {
+tabs1.forEach(tab => {
     tab.addEventListener("click", () => {
-        tabs.forEach(item => item.classList.remove("is-active"));
+        tabs1.forEach(item => item.classList.remove("is-active"));
         tab.classList.add("is-active");
 
         const target = tab.dataset.target;
-        tabContentBoxes.forEach(box => {
+        tabContentBoxes1.forEach(box => {
             if (box.getAttribute("id") === target){
                 box.classList.remove("is-hidden");
             }else {
@@ -43,6 +43,26 @@ tabs.forEach(tab => {
         })
     });
 });
+
+const tabs2 = document.querySelectorAll(".tabs2")
+const tabContentBoxes2 = document.querySelectorAll(".content2")
+
+tabs2.forEach(tab => {
+    tab.addEventListener("click", () => {
+        tabs2.forEach(item => item.classList.remove("is-active"));
+        tab.classList.add("is-active");
+
+        const target = tab.dataset.target;
+        tabContentBoxes2.forEach(box => {
+            if (box.getAttribute("id") === target){
+                box.classList.remove("is-hidden");
+            }else {
+                box.classList.add("is-hidden");
+            }
+        })
+    });
+});
+
 
 //Conquistas Dropdown
 const dropdownConquistas = document.querySelector("#dropdown-conquistas")
