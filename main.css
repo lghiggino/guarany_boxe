@@ -24,3 +24,38 @@
 .round-border{
     border-radius: 25px;
 }
+
+iframe {
+    width: 37.5em;
+    height: 28.125em;
+    border: 2px solid black;
+    padding: 1em;
+}
+
+
+@media screen and (max-width:960px){
+    .modal-content{
+        width: 28em;
+        height: 35em;
+        
+    }
+    iframe {
+        width: 25em;
+        height: 22em;
+        border: 1px solid black;
+        padding: 1em;
+    }
+}
+
+@media screen and (max-width:400px){
+    .modal-content{
+        width: 22em;
+        height: 30em;
+    }
+    iframe {
+        width: 19em;
+        height: 15em;
+        border: 1px solid black;
+        padding: 1em;
+    }
+}
